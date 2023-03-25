@@ -1,165 +1,141 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-image: linear-gradient(to right, rgba(200, 8,207, 0.75), rgba(28, 70, 184, 0.8)), url(https://www.hmablogs.com/wp-content/uploads/2022/06/background-1-scaled.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-  }
-  nav {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    height: 100vh;
     width: 100%;
-    height: 80px;
+    background-image: url(s.jfif);
+    background-position: center;
+    background-size: cover;
+    padding-right: 3%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    padding: 35px 5%;
-  }
-  nav .logo{
-    font-size: 30px;
-    font-weight: 700;
-  }
-  nav ul{
-    display: flex;
-    list-style: none;
-  }
-  nav ul li{
-    padding: 8px 15px;
-    border-radius: 10px;
-    transition: 0.2s ease-in;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  nav .navLinks button{
-    padding: 2px 20px;
-    border-radius: 10px;
-    color: blue;
-    font-size: 16px;
-    border-style: none;
-    font-weight: 700;
-    margin-left: 10px;
-  }
-  nav ul li:hover{
-    background-color: rgb(44, 1, 197);
-  }
-  nav .menubtn{
-    font-size: 30px;
-    font-weight: bolder;
-    cursor: pointer;
-    display: none;
-  }
-   
-  /* responsive navbar css */
-  @media screen and (max-width: 600px) {
-    nav .menubtn{
-      display: flex;
-    }
-    nav .navLinks{
-      display: none;
-    }
-    .sideNav {
-      display: block !important;
-    }
-  }
-   
-  .sideNav{
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0%;
-    background-color: rgb(44, 1, 197);
-    overflow-x: hidden;
-    transition: 0.3s ease-in;
-    padding-top: 60px;
-    display: none;
-  }
-   
-  .sideNav a{
-    padding: 8px 8px 8px 40px;
-    display: block;
-    font-size: 25px;
-    font-weight: 500;
-    color: #d1d1d1;
-    transition: 0.3s;
-    text-decoration: none;
-  }
-  .sideNav a button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: blue;
-    font-size: 16px;
-    border-style: none;
-    font-weight: 700;
-  }
-  .sideNav a:hover{
-    color: white;
-  }
-  .sideNav .closeBtn{
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 20px;
-    margin-left: 50px;
-  }
-   
-  .row{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 2% 5%;
-  }
-  .row .column1 {
-    padding-right: 50px;
-  }
-  .column1 h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-  }
-  .column1 p {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .column1 button {
-    width: 150px;
+}
+.logo {
+    width: 450px;
+    height: 410px;
+    background-image: url(a.jfif);
+    margin-top: 150px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+    padding-left: 450px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+#btn1 {
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #378de5 3%, #48789b 100%);
+    border-radius: 30px;
+    border: 1px solid #5e97d1;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
     padding: 12px 20px;
-    border-radius: 20px;
-    border-style: none;
-    color: blue;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+    text-shadow: 0px 1px 0px #528ecc;
+}
+#btn2 {
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+    border-radius: 30px;
+    border: 1px solid #cbcbcb;
+    cursor: pointer;
+    color: #5e97d1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+    text-shadow: 0px 1px 0px #cbcbcb;
+}
+.btn:hover {
+    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+.content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .text {
+    position: relative;
+    max-width: 600px;
+}
+.content .text h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 80px;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    font-size: 40px;
+    color: #fff;
+}
+.content .text h1 span {
+    font-size: 50px;
+}
+.content .text p {
     font-size: 17px;
     font-weight: 600;
-  }
-  /* Header content responsive */
-  @media screen and (max-width: 980px) {
-    .column2 img {
-      width: 350px;
-    }
-    .column1 h1 {
-      font-size: 40px;
-    }
-    .column1 p{
-      font-size: 17px;
-    }
-    .row {
-      margin-top: 80px;
-    }
-  }
-   
-  @media screen and (max-width: 600px) {
-   
-    .column1 h1 {
-      font-size: 35px;
-    }
-    .row {
-      flex-direction: column;
-   
-    }
-    .row .column1 {
-      padding: 30px;
-    }
-  }
+    letter-spacing: .1em;
+    margin-top: 40px;
+    color:black;
+ }
+.btn3 {
+    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+    margin-top: 60px;
+    margin-left: 140px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: .5s;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #1b1b1b;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 1px 4px 12px rgba(94,28,68,.15);
+}
+.pepsi {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 600px;
+    margin-top: 80px;
+    padding-left: 440px;
+    justify-content: flex-end;
+}
+
